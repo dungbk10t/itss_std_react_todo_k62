@@ -46,9 +46,7 @@ function Todo() {
     putItems(newItems);
   };
   
-  const handleAdd = text => {
-    putItems([...items, { key: getKey(), text, done: false }]);
-  };
+ 
   
   const handleFilterChange = value => setFilter(value);
 
@@ -57,7 +55,7 @@ function Todo() {
       <div className="panel-heading">
         ITSS ToDoアプリ
       </div>
-      <Input onAdd={handleAdd} />
+      
       <Filter
         onChange={handleFilterChange}
         value={filter}
