@@ -15,9 +15,9 @@ function Input( { onAdd } ) {
       setText('');
     }
   };
-
+  
   return (
-    <div className="panel-block">
+   <div className="panel-block">
       <input
         class="input"
         type="text"
